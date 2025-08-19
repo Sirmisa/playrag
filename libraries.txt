@@ -1,0 +1,26 @@
+what is the command for the ones that need installation
+
+Of course. You can install all the required third-party libraries with a single pip command.
+
+1. Install the Python Libraries
+
+Open your terminal or command prompt and run the following command:
+Bash
+
+pip install playwright pandas numpy nltk rouge-score
+
+2. Install Playwright Browsers
+
+After the pip installation is complete, Playwright needs to download the browser binaries (for Chromium, Firefox, and WebKit) that it uses for automation. Run this command:
+Bash
+
+playwright install
+
+3. Download NLTK Data
+
+Finally, the script uses the punkt tokenizer from NLTK for calculating the BLEU score. You need to download it by running this command:
+Bash
+
+python -m nltk.downloader punkt
+
+After running these three commands, your environment will be fully set up to execute the evaluation script.
